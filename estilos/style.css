@@ -271,6 +271,29 @@ article h2 {
   border-radius: 10px;
 }
 
+.projeto-link {
+  display: none;
+}
+
+.projeto-link a {
+  text-decoration: none;
+  color: var(--destaque-inverso);
+  font-weight: bold;
+  transition: color .5s;
+}
+
+.projeto-link a:hover {
+  color: var(--destaque);
+}
+
+.projeto .descricao {
+  color: var(--destaque-inverso);
+}
+
+.projeto .descricao:open {
+  color: var(--destaque);
+}
+
 footer {
   background-color: var(--destaque);
   color: var(--texto-inverso);
@@ -320,11 +343,24 @@ footer a:hover {
   #projeto-container .projeto-info {
     max-width: 80%;
     align-content: center;
+    font-size: 1.4em;
+  }
+
+  #projeto-container p, #projeto-container h3 {
+    margin: 20px 0;
   }
 
   #projeto-container .foto {
     aspect-ratio: 1/1;
     max-width: 20%;
     max-height: 200px;
+  }
+
+  .projeto-link {
+    display: block;
+  }
+
+  .projeto .descricao {
+    display: none;
   }
 }
