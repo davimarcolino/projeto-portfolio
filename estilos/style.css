@@ -305,6 +305,7 @@ footer a {
   color: var(--texto-inverso);
   text-decoration: none;
   font-weight: bold;
+  transition: color .5s;
 }
 
 footer a:hover {
@@ -318,6 +319,10 @@ footer a:hover {
 @media screen and (min-width: 768px) {
   main {
     grid-template-columns: auto 300px 1fr auto;
+  }
+
+  #menu #home-icon {
+    display: none;
   }
 
   section#ficha {
