@@ -38,3 +38,12 @@ navLinks.forEach(link => {
     }
   });
 });
+
+// Barra de Progresso
+const porcent = document.querySelectorAll('span.porcent')
+const progressbar = document.querySelectorAll('div.progresso')
+for (let pos in porcent) {
+  progressbar[pos].width = porcent[pos].text
+  console.log(porcent)
+  console.log(`Deu certo ${pos}`)
+}
